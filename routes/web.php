@@ -280,7 +280,7 @@ Route::resource('/admin/countries-data', 'App\Http\Controllers\Admin\CountriesDa
 /*-------------------------chancses-------------------*/
 Route::resource('/admin/country-details', 'App\Http\Controllers\Admin\CountryDetailsController');
 
-Route::get('/admin/login', 'App\Http\Controllers\Auth\LoginAdminController@showLoginAdminForm')->name('admin.login');
+Route::get('/admin/login', 'App\Http\Controllers\Auth\LoginAdminController@showLoginAdminForm')->name('login');
 Route::post('/admin/login', 'App\Http\Controllers\Auth\LoginAdminController@attemptLogin')->name('admin.login');
 Route::get('/admin/register', 'App\Http\Controllers\Auth\RegisterAdminController@showRegisterForm')->name('admin.register');
 Route::post('/admin/register', 'App\Http\Controllers\Auth\RegisterAdminController@create')->name('admin.register');
